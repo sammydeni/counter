@@ -12,8 +12,8 @@ function App() {
    <Router>
     <Routes>
       <Route path='/' element={<Homepage/>}/>
-      <Route path='/counter' element={<Counter/>}/>
-      <Route path='/timer' element={<Timer/>}/>
+      <Route path='counter' element={<Counter/>}/>
+      <Route path='timer' element={<Timer/>}/>
     </Routes>
    </Router>
     </div>

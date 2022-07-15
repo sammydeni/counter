@@ -15,7 +15,8 @@
 .card h2 {
   color: darkslategrey;
   font-size: 3rem;
-  margin: 10px;
+  margin: 0;
+  display: inline-block;
 }
 
 .card h1 {
@@ -24,7 +25,7 @@
   margin: 5px;
 }
 
-.card button {
+.card div:last-child button {
   margin: 1rem;
   width: 60px;
   height: 60px;
@@ -37,5 +38,17 @@
 
 .card icon {
   vertical-align: middle;
+}
 
+.header {
+  display: flex;
+  align-items: center;
+}
+
+.back {
+  background-color: transparent;
+  border: none;
+  color: darkslategrey;
+  font-size: 3rem;
+  margin-right: 1rem;
 }

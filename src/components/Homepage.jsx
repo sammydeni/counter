@@ -22,7 +22,7 @@ const Homepage = () => {
     }
 
     return <Card>
-        <h2>Where do you want to go?</h2>
+        <h2>Tool List</h2>
         <div>
             <button style={buttonStyle} onClick={goToCounter}>Counter</button>
             <button style={buttonStyle} onClick={goToTimer}>Timer</button>

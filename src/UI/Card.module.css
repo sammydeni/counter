@@ -1,0 +1,41 @@
+.card {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+
+  background-color: aquamarine;
+  flex-direction: column;
+  padding: 1rem;
+  border-radius: 20px;
+  margin-bottom: 2rem;
+}
+
+.card h2 {
+  color: darkslategrey;
+  font-size: 3rem;
+  margin: 10px;
+}
+
+.card h1 {
+  color: cornflowerblue;
+  font-size: 5rem;
+  margin: 5px;
+}
+
+.card button {
+  margin: 1rem;
+  width: 60px;
+  height: 60px;
+  border: none;
+  border-radius: 10px;
+  font-size: 2rem;
+  background-color: rgb(108, 210, 212);
+  color: cornflowerblue;
+}
+
+.card icon {
+  vertical-align: middle;
+
+}

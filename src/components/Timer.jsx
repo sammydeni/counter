@@ -1,5 +1,7 @@
 import React, { useState } from "react";
-import { FaPlay, FaPause, FaStop } from "react-icons/fa";
+import { FaPlay, FaPause } from "react-icons/fa";
+import { BiRotateLeft } from "react-icons/bi";
+import { AiOutlineFieldTime } from "react-icons/ai";
 import Card from "../UI/Card";
 
 var myInterval;
@@ -15,28 +17,32 @@ const Timer = () => {
       }, 1000);
       setIsGoing(!isGoing);
     } else {
-        clearInterval(myInterval);
-        setIsGoing(!isGoing);
+      clearInterval(myInterval);
+      setIsGoing(!isGoing);
     }
   };
 
   const stop = () => {
     clearInterval(myInterval);
     setTimerCount(0);
+    setIsGoing(true);
   };
 
   return (
     <Card>
-      <h2>Timer</h2>
+      <h2>Stopwatch</h2>
       <h1>{timerCount}</h1>
       <div>
         <button onClick={play}>
-         {isGoing && <FaPlay style={{ verticalAlign: "middle" }} />}
-         {!isGoing && <FaPause style={{ verticalAlign: "middle" }} />}
+          {isGoing && <FaPlay style={{ verticalAlign: "middle" }} />}
+          {!isGoing && <FaPause style={{ verticalAlign: "middle" }} />}
         </button>
         <button onClick={stop}>
-          <FaStop style={{ verticalAlign: "middle" }} />
+          <BiRotateLeft style={{ verticalAlign: "middle" }} />
         </button>
+        {<button>
+          <AiOutlineFieldTime style={{ verticalAlign: "middle" }} />
+        </button>}
       </div>
     </Card>
   );

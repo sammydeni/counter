@@ -9,7 +9,9 @@ const Counter = () => {
   };
 
   const decrease = () => {
+    if(counterVal > 0) {
     setCounterVal((val) => val - 1);
+    }
   };
 
   return (
